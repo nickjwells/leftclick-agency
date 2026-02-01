@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Premium one-page marketing website for LeftClick, an AI automation agency targeting B2B companies. Single HTML file (~60KB) with embedded CSS and JavaScript.
+Premium marketing website for LeftClick, an AI automation agency targeting B2B companies. Static HTML files (~50-60KB each) with embedded CSS and JavaScript.
 
 ## Live URLs
 
@@ -45,12 +45,22 @@ Plain text wordmark: "LeftClick" where "Click" is rendered in emerald green (`#1
 
 ## Page Sections
 
+### Homepage (index.html)
 1. **Hero** — Parallax floating tech icons, gradient orbs, headline + primary CTA
 2. **Social Proof** — Infinite scrolling logo carousel (Make, n8n, Zapier, HubSpot, Airtable, etc.)
 3. **Case Studies** — 3 cards with animated number counters showing client results
 4. **How It Works** — 3-phase process (Growth Mapping → Scope → Delivery)
 5. **Services** — 6-card grid of service offerings
 6. **CTA** — Final call-to-action linking to Calendly
+
+### About Page (about.html)
+1. **Hero** — Company origin story headline with gradient orbs
+2. **Story Section** — Company history and early AI adoption narrative
+3. **Founders Section** — Profiles for Nick Saraev (CEO) and Noah Edis (COO)
+4. **Timeline Section** — Key milestones from 2020-2025
+5. **Values Section** — 6-card grid of company principles
+6. **Press Section** — Featured media logos (Popular Mechanics, Apple News, Bloomberg, Indie Hackers)
+7. **CTA** — Call-to-action linking to Calendly
 
 ## Interactive Features
 
@@ -80,7 +90,8 @@ cd /Users/nicksaraev/leftclick-agency && netlify deploy
 
 ```
 /Users/nicksaraev/leftclick-agency/
-├── index.html          # Main website (all HTML, CSS, JS embedded)
+├── index.html          # Homepage (all HTML, CSS, JS embedded)
+├── about.html          # About page (founders, story, values)
 ├── netlify.toml        # Netlify configuration
 ├── .gitignore          # Git ignore rules
 ├── CLAUDE.md           # This file
