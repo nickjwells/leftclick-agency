@@ -43,14 +43,23 @@ Squared/luxe aesthetic — avoid rounded pills:
 ### Logo
 Plain text wordmark: "LeftClick" where "Click" is rendered in emerald green (`#10b981`).
 
-## Page Sections
+## Pages
 
+### index.html (Home)
 1. **Hero** — Parallax floating tech icons, gradient orbs, headline + primary CTA
 2. **Social Proof** — Infinite scrolling logo carousel (Make, n8n, Zapier, HubSpot, Airtable, etc.)
 3. **Case Studies** — 3 cards with animated number counters showing client results
 4. **How It Works** — 3-phase process (Growth Mapping → Scope → Delivery)
 5. **Services** — 6-card grid of service offerings
 6. **CTA** — Final call-to-action linking to Calendly
+
+### contact.html (Contact)
+1. **Hero** — Simplified hero with "Get in Touch" badge and headline
+2. **Contact Grid** — Two-column layout with info and form
+   - Left: Discovery call CTA card, contact methods (email, location, response time), social links
+   - Right: Contact form with fields for name, email, company, interest, and message
+3. **Founder Section** — Nick Saraev profile with bio and credentials
+4. **FAQ Section** — 6 common questions about process, pricing, and support
 
 ## Interactive Features
 
@@ -79,8 +88,9 @@ cd /Users/nicksaraev/leftclick-agency && netlify deploy
 ## File Structure
 
 ```
-/Users/nicksaraev/leftclick-agency/
+/Users/nicksaraev/leftclick-contact/
 ├── index.html          # Main website (all HTML, CSS, JS embedded)
+├── contact.html        # Contact page with form and founder info
 ├── netlify.toml        # Netlify configuration
 ├── .gitignore          # Git ignore rules
 ├── CLAUDE.md           # This file
