@@ -1,21 +1,20 @@
-# LeftClick Agency Website
+# LeftClick Services Page
 
 ## Project Overview
 
-Premium one-page marketing website for LeftClick, an AI automation agency targeting B2B companies. Single HTML file (~60KB) with embedded CSS and JavaScript.
+Comprehensive services page for LeftClick, an AI automation agency. This is a dedicated services landing page that provides detailed breakdowns of all service offerings. Single HTML file with embedded CSS and JavaScript.
 
-## Live URLs
+## Related Sites
 
-- **Production**: https://leftclick-agency.netlify.app
-- **Custom Domain**: go1secondcopy.com (pending/live)
-- **Netlify Admin**: https://app.netlify.com/projects/leftclick-agency
+- **Main Landing Page**: leftclick-agency (https://leftclick-agency.netlify.app)
+- **LeftClick.ai**: https://www.leftclick.ai
 
 ## Tech Stack
 
 - **Framework**: Static HTML (no build step)
 - **Styling**: Embedded CSS
 - **JavaScript**: Vanilla JS, embedded
-- **Hosting**: Netlify
+- **Hosting**: Netlify (recommended)
 - **Fonts**: Inter (Google Fonts CDN)
 
 ## Design System
@@ -31,7 +30,7 @@ Premium one-page marketing website for LeftClick, an AI automation agency target
 
 ### Typography
 - **Font**: Inter
-- **Weights**: 300 (light), 400 (regular), 500 (medium), 600 (semibold), 700 (bold), 800 (extrabold)
+- **Weights**: 300-800
 - **Letter spacing**: -0.03em (tight)
 
 ### Corner Radii
@@ -43,14 +42,29 @@ Squared/luxe aesthetic — avoid rounded pills:
 ### Logo
 Plain text wordmark: "LeftClick" where "Click" is rendered in emerald green (`#10b981`).
 
-## Page Sections
+## Page Structure
 
-1. **Hero** — Parallax floating tech icons, gradient orbs, headline + primary CTA
-2. **Social Proof** — Infinite scrolling logo carousel (Make, n8n, Zapier, HubSpot, Airtable, etc.)
-3. **Case Studies** — 3 cards with animated number counters showing client results
-4. **How It Works** — 3-phase process (Growth Mapping → Scope → Delivery)
-5. **Services** — 6-card grid of service offerings
-6. **CTA** — Final call-to-action linking to Calendly
+### Sections
+
+1. **Hero** — Stats-focused hero with key metrics (50+ systems, $12M+ revenue, etc.)
+2. **Lead Generation Systems** — AI Cold Email, Application Systems, Content Systems
+3. **Project Management Systems** — Automated Fulfillment, Onboarding, PM Workflows
+4. **Hiring Systems** — Intake Systems, AI Scoring, Trial Processes
+5. **Sales Administration** — Custom CRMs, AI Asset Generators, Nurture Systems
+6. **Who It's For** — Target personas (Agencies, SaaS, Professional Services, E-Commerce)
+7. **Results/Testimonials** — Client success stories (1SecondCopy, AlterCall, Dad's Printing, XWECAN)
+8. **Process** — 4-step timeline (Discovery, Design, Build, Launch)
+9. **Pricing** — Three tiers (Single System, Growth Package, Retainer)
+10. **CTA** — Final call-to-action
+
+### Service Categories
+
+| Category | Sub-Services |
+|----------|--------------|
+| Lead Generation | AI Cold Email Systems, Application Systems, Content Systems |
+| Project Management | Automated Fulfillment, Onboarding Systems, PM Workflows |
+| Hiring | Intake Systems, AI Scoring, Trial Processes |
+| Sales Administration | Custom CRMs, AI Asset Generators, Nurture Systems |
 
 ## Interactive Features
 
@@ -58,18 +72,19 @@ Plain text wordmark: "LeftClick" where "Click" is rendered in emerald green (`#1
 - Animated counters with easeOutQuart easing
 - Mouse-following cursor glow effect (desktop only)
 - Scroll progress indicator in header
+- Smooth scroll navigation
 - Fully responsive down to mobile
 
 ## Deployment
 
-### Deploy to Production
+### Deploy to Production (if Netlify configured)
 ```bash
-cd /Users/nicksaraev/leftclick-agency && netlify deploy --prod
+cd /Users/nicksaraev/leftclick-services && netlify deploy --prod
 ```
 
 ### Preview Deploy
 ```bash
-cd /Users/nicksaraev/leftclick-agency && netlify deploy
+cd /Users/nicksaraev/leftclick-services && netlify deploy
 ```
 
 ### Requirements
@@ -79,8 +94,8 @@ cd /Users/nicksaraev/leftclick-agency && netlify deploy
 ## File Structure
 
 ```
-/Users/nicksaraev/leftclick-agency/
-├── index.html          # Main website (all HTML, CSS, JS embedded)
+/Users/nicksaraev/leftclick-services/
+├── index.html          # Main services page (all HTML, CSS, JS embedded)
 ├── netlify.toml        # Netlify configuration
 ├── .gitignore          # Git ignore rules
 ├── CLAUDE.md           # This file
@@ -107,8 +122,14 @@ Search for hex codes in `index.html`:
 ### Update Calendly Link
 Search for `calendly.com/leftclick-meeting-30` and replace.
 
-### Add/Remove Social Proof Logos
-Find the `.logo-track` div in the social proof section. Logos are inline SVGs.
+### Update Pricing
+Find the `.pricing-section` in index.html. Each tier has:
+- `.pricing-name` — tier name
+- `.pricing-amount` — price
+- `.pricing-features` — feature list
+
+### Add/Remove Services
+Each service category has a `.services-detail-grid` containing `.service-detail-card` elements.
 
 ## Notes
 
@@ -116,3 +137,4 @@ Find the `.logo-track` div in the social proof section. Logos are inline SVGs.
 - Maintain the squared corner aesthetic (no pills)
 - Test scroll animations after content changes
 - Counter animations trigger on scroll into view
+- Page is designed to work as standalone services page or linked from main site
