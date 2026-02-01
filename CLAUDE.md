@@ -44,7 +44,7 @@ Plain text wordmark: "LeftClick" where "Click" is rendered in emerald green (`#1
 
 ## Page Structure
 
-### Sections
+### index.html (Services)
 
 1. **Hero** — Stats-focused hero with key metrics (50+ systems, $12M+ revenue, etc.)
 2. **Lead Generation Systems** — AI Cold Email, Application Systems, Content Systems
@@ -65,6 +65,15 @@ Plain text wordmark: "LeftClick" where "Click" is rendered in emerald green (`#1
 | Project Management | Automated Fulfillment, Onboarding Systems, PM Workflows |
 | Hiring | Intake Systems, AI Scoring, Trial Processes |
 | Sales Administration | Custom CRMs, AI Asset Generators, Nurture Systems |
+
+### about.html (About)
+1. **Hero** — Company origin story headline with gradient orbs
+2. **Story Section** — Company history and early AI adoption narrative
+3. **Founders Section** — Profiles for Nick Saraev (CEO) and Noah Edis (COO)
+4. **Timeline Section** — Key milestones from 2020-2025
+5. **Values Section** — 6-card grid of company principles
+6. **Press Section** — Featured media logos (Popular Mechanics, Apple News, Bloomberg, Indie Hackers)
+7. **CTA** — Call-to-action linking to Calendly
 
 ## Interactive Features
 
@@ -96,6 +105,7 @@ cd /Users/nicksaraev/leftclick-services && netlify deploy
 ```
 /Users/nicksaraev/leftclick-services/
 ├── index.html          # Main services page (all HTML, CSS, JS embedded)
+├── about.html          # About page (founders, story, values)
 ├── netlify.toml        # Netlify configuration
 ├── .gitignore          # Git ignore rules
 ├── CLAUDE.md           # This file
